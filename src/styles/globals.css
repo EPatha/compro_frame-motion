@@ -1,0 +1,184 @@
+/* src/styles/globals.css */
+
+/* src/styles/globals.css */
+
+/* General Layout Styles */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #f05a28; /* Change hover color */
+}
+
+/* Flex Utilities */
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+/* Section Spacing */
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
+/* Text Styles */
+.text-center {
+  text-align: center;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-black {
+  background-color: #121212;
+}
+
+/* Grid Layout for Commitment */
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Button Styles */
+button {
+  background-color: #f05a28;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #e04e21;
+}
+
+
+
+/* For Footer styling */
+footer {
+  background-color: #121212;
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+footer .text-center {
+  text-align: center;
+}
+
+footer h1 {
+  font-size: 4rem; /* Adjust font size */
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 1.25rem;
+  color: #ccc;
+}
+
+footer .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+footer .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+footer .text-xl {
+  font-size: 1.25rem;
+}
+
+footer .text-2xl {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer li {
+  margin: 8px 0;
+}
