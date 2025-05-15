@@ -1,8 +1,10 @@
 // src/app/layout.tsx
+'use client';
+
 import '../styles/globals.css';  // Path to global styles
 import { ReactNode } from 'react';
 import Link from 'next/link';
-import Footer from '../components/Footer'; // Import the Footer component
+import Footer from './components/Footer'; // Import the Footer component
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
@@ -10,13 +12,17 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <html lang="en">
         <body>
           {/* Navbar Section */}
-          <div className="navbar">
-            <ul>
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/about">About Us</Link></li>
-              <li><Link href="/portfolio">Portfolio</Link></li>
-            </ul>
-          </div>
+           <div className="container mx-auto flex justify-center space-x-8">
+          <Link href="/" className="text-lg hover:text-gray-300">
+            Home
+          </Link>
+          <Link href="/" className="text-lg hover:text-gray-300">
+            About Us
+          </Link>
+          <Link href="/" className="text-lg hover:text-gray-300">
+            Portfolio
+          </Link>
+        </div>
 
 
           {/* Main Content */}
